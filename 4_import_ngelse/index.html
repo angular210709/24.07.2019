@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="dataApp">
+<head>
+    <title>Clock!</title>
+    <script src="angular.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="elif.js"></script>
+
+    <script src="bootstrap.js"></script>
+    
+    <script src="parentCtrl.js"></script>
+
+</head>
+<body >
+
+    <div ng-controller="parentCtrl">
+
+        <p ng-if="flip">flip is true</p>
+        <p ng-else>flip is false</p>
+        <button ng-click="flip=!flip">FLIP</button>
+    </div>
+
+    
+    <br>
+</body>
+</html>

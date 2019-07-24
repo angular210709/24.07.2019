@@ -1,0 +1,32 @@
+<html ng-app="manyModulesApp">
+
+    <head>
+        <title>Modules App</title>
+
+        <script src='angular.js'></script>
+
+        <!-- import modules -->
+        <!--    cdnjs.com
+                angularjs tags 
+                ngTagsInput (mbenford)
+        -->
+        <link rel="stylesheet" href="http://mbenford.github.io/ngTagsInput/css/ng-tags-input.min.css" />
+        <script src="http://mbenford.github.io/ngTagsInput/js/ng-tags-input.min.js"></script>
+        
+        <!-- bootstrap -->
+        <script src='bootstrap.js'></script>
+
+        <script src='TagsDemoCtrl.js'></script>
+
+    </head>
+
+    <body>
+        <h1>Modules App</h1>
+
+         <div ng-controller="TagsDemoCtrl as ctrl">
+            <tags-input ng-model="ctrl.tags"></tags-input>
+         </div>
+       
+    </body>
+
+</html>
