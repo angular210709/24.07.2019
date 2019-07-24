@@ -1,0 +1,9 @@
+.ok {
+    color : green
+}
+
+.missing {
+    color : red;
+    border-color : red
+}
+
